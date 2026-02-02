@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sukkergris - Product list</title>
+  </head>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <body>
+    <h1>Sukkergris</h1>
+
+    <img id="smallPic" class="profilePic" hidden />
+
+    <section id="homepageBox">
+      <input type="search" id="txtSearch" placeholder="Søk" />
+      <button id="btnSearch">Search</button>
+
+      <hr />
+
+      <h2>Product list</h2>
+      <div id="container"></div>
+
+      <button id="goToShoppingCartBtn">Go to shoppingcart</button>
+
+      <button id="homeBtn">Home</button>
+    </section>
+
+    <script type="module">
+      import { userPicIfLoggedIn } from "./utils.js";
+      userPicIfLoggedIn();
+    </script>
+
+    <script type="module" src="js/productList.js"></script>
+  </body>
+</html>
+
+

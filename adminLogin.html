@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sukkergris - Admin login</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Sukkergris - Admin</h1>
+
+    <img id="smallPic" class="profilePic" hidden />
+
+    <div id="loginContainer">
+      <h2>Admin login</h2>
+
+      <label for="username">Username (email): </label>
+      <input id="username" type="email" /><br />
+
+      <label for="password">Password: </label>
+      <input id="password" type="password" /><br />
+
+      <button id="btnLogin">Login</button>
+
+      <p id="message"></p>
+    </div>
+
+    <div id="adminMenu" style="display: none">
+      <h2>Admin menu</h2>
+      <button id="btnProducts">Products</button>
+      <button id="btnOrders">Orders</button>
+      <button id="btnUsers">Users</button>
+      <button id="btnCommentAndRating">Comments and ratings</button>
+      <button id="btnMessageBoard">Message board and reviews</button>
+      <br /><br />
+      <button id="btnLogout">Logout</button>
+    </div>
+
+    <script type="module" src="js/adminLogin.js"></script>
+  </body>
+</html>

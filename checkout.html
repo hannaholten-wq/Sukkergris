@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sukkergris - Checkout</title>
+  </head>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <body>
+    <h1>Checkout</h1>
+
+    <img id="smallPic" class="profilePic" hidden />
+
+    <button id="homeBtn">Home</button>
+    <hr />
+    <h2>Requried to fill out</h2>
+
+    <h3>Customer's information:</h3>
+
+    <section>
+      <div>
+        <label for="customer_name">Customer's full name: </label>
+        <input id="customer_name" type="text" />
+      </div>
+
+      <div>
+        <label for="street">Streetname: </label>
+        <input id="street" type="text" />
+      </div>
+
+      <div>
+        <label for="city">Cityname: </label>
+        <input id="city" type="text" />
+      </div>
+
+      <div>
+        <label for="zipcode">Zipcode: </label>
+        <input id="zipcode" type="text" inputmode="numeric" />
+      </div>
+
+      <div>
+        <label for="country">Country: </label>
+        <input id="country" type="text" />
+      </div>
+
+      <div>
+        <label for="email">Email: </label>
+        <input id="email" type="email" />
+      </div>
+
+      <div>
+        <label for="phone">(Optional) Phonenumber:</label>
+        <input id="phone" type="tel" inputmode="numeric" />
+        <hr />
+      </div>
+
+      <p id="message"></p>
+
+      <h3>Shipping:</h3>
+      <label for="shipping_id">Shipping method:</label>
+      <select id="shipping_id">
+        <option value="1" data-price="0">Pickup in store, 0kr</option>
+        <option value="2" data-price="30">Pickup-box, 30kr</option>
+        <option value="3" data-price="45" selected>Mail, 45kr (default)</option>
+        <option value="4" data-price="100">Express mail, 100kr</option></select
+      ><br />
+      <hr />
+
+      <button id="completeTheOrderButton">Place order</button>
+      <p id="totalPrice"></p>
+    </section>
+
+    <script type="module" src="js/checkout.js"></script>
+  </body>
+</html>

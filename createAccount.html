@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account - Sukkergris</title>
+</head>
+
+ <link rel="stylesheet" href="css/style.css">
+ 
+<body>
+    
+    <h1>Create an account</h1>
+
+     <p id="message" hidden></p>
+
+
+    <form id="formCreateUser" novalidate enctype="multipart/form-data">
+
+        <div>
+            <label for="fullname">Full name</label>
+            <input id="fullname" name="fullname" required/>
+        </div>
+        <div>
+             <label for="username">Email</label>
+             <input id="username" name="username" type="email" required/>
+        </div>
+         <div>
+             <label for="password">Password</label>
+             <input id="password" name="password" type="password" minlength="8" required/>
+        </div>
+          <div>
+             <label for="street">Address</label>
+             <input id="street" name="street" required/>
+        </div>
+        <div>
+             <label for="city">City</label>
+             <input id="city" name="city" required/>
+        </div>
+        <div>
+             <label for="zipcode">Zipcode</label>
+             <input id="zipcode" name="zipcode" required/>
+        </div>
+        <div>
+             <label for="country">Country</label>
+             <input id="country" name="country" required/>
+        </div>
+        <div>
+             <label for="img_file">Profile picture (optional)</label>
+             <input id="img_file" name="img_file" type="file" accept="image/*" />
+        </div>
+        <div>
+             <button type="submit" id="btnCreate">Create account</button>
+             <button type="button" id="btnHome">Home</button>
+        </div>
+
+    </form>
+
+    <script type="module" src="js/createAccount.js"></script>
+
+
+
+</body>
+</html>

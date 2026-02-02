@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in - sukkergris</title>
+</head>
+
+ <link rel="stylesheet" href="css/style.css">
+ 
+<body>
+    
+    <h1>Log in</h1>
+
+    <p id="message" hidden></p>
+
+    <form id="formLogin" novalidate>
+
+        <div>
+            <label for="username">E-mail</label>
+            <input id="username" name="username" type="email" required/>
+         </div>
+
+         <div>
+            <label for="password">Passord</label>
+            <input id="password" name="password" type="password" required />
+         </div>
+
+         <div>
+            <button type="submit" id="btnLogin">Log in</button>
+            <button type="button" id="btnHome" >Home</button>
+         </div>
+    </form>
+
+    <script src="js/logIn.js"></script>
+
+
+</body>
+</html>

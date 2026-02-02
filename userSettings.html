@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Settings</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <h1>User settings</h1>
+
+    <img id="smallPic" alt="profile" hidden>
+
+    <section id="settingsBox">
+        <label>Full name:</label>
+        <input type="text" id="fullname">
+
+        <label>Street:</label>
+        <input type="text" id="street">
+
+        <label>City:</label>
+        <input type="text" id="city">
+
+        <label>Zipcode:</label>
+        <input type="text" id="zipcode">
+
+        <label>Country:</label>
+        <input type="text" id="country">
+
+        <label>New password:</label>
+        <input type="password" id="password" minlength="8">
+
+        <label>Profile picture:</label>
+        <input type="file" id="img_file">
+
+        <button id="btnSave">Save changes</button>
+        <button id="btnDelete">Delete account</button>
+        <button id="btnLogout">Log out</button>
+        <button id="btnHome">Home</button>
+
+
+    </section>
+
+    <div id="message"></div>
+
+<script type="module" src="js/userSettings.js"></script>
+
+
+    
+</body>
+</html>

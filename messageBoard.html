@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sukkergris - User comments / Message board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Message board</h1>
+    <img id="smallPic" class="profilePic" hidden />
+
+    <button id="backBtn">Back to admin menu</button>
+    <button id="btnHomePage" hidden>Go Home</button>
+    <hr />
+    <img id="smallPic" class="profilePic" hidden />
+
+    <!-- New comment -->
+    <h2>Write a message</h2>
+    <div id="newMessageContainer">
+      <label for="msgHeading">Heading:</label><br />
+      <input id="msgHeading" type="text" /><br />
+
+      <label for="msgText">Message:</label><br />
+      <textarea id="msgText" rows="4"></textarea><br />
+
+      <button id="btnPost">Post message</button>
+      <p id="msgError"></p>
+    </div>
+
+    <hr />
+
+    <!-- List of comments -->
+    <h2>All messages</h2>
+    <div id="messagesContainer"></div>
+
+    <!-- MeowMeowBeenz rating -->
+    <h2>User rating (MeowMeowBeenz)</h2>
+
+    <label for="userSelect">Choose user:</label><br />
+    <select id="userSelect">
+      <option value="">-- select user --</option></select
+    ><br />
+
+    <label for="beenzSelect">User rating (1-5):</label><br />
+    <select id="beenzSelect">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option></select
+    ><br />
+
+    <button id="btnRate">Save user rating</button>
+    <button id="btnClearRatings">Delete my user ratings</button>
+
+    <p id="ratingMessage"></p>
+
+    <h3>All user ratings</h3>
+    <div id="userRatingsContainer"></div>
+
+    <script type="module" src="js.messageBoard.js"></script>
+  </body>
+</html>

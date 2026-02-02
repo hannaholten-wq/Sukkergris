@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukkergris - Admin Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Admin - Products</h1>
+
+    <button id="backBtn">Back to admin menu</button>
+    <hr>
+
+    <h2>Product list</h2>
+    <div id="productListContainer"></div>
+     <img id="smallPic" class="profilePic" hidden />
+
+    <h2 id="formTitle">Add new product</h2>
+    <form id="productForm" enctype="multipart/form-data">
+
+        <input type="hidden" id="productId">
+
+        <label>Name:</label><br>
+        <input id="name" type="text"><br>
+
+        <label>Heading:</label><br>
+        <input id="heading" type="text"><br>
+
+     <label for="category_id">Category</label><br>
+        <select id="category_id">
+        <option value="">-- select category --</option>
+        </select><br>
+
+
+        <label>Description:</label><br>
+        <textarea id="description"></textarea><br>
+
+        <label>Price:</label><br>
+        <input id="price" type="number"><br>
+
+        <label>Discount (%):</label><br>
+        <input id="discount" type="number"><br>
+
+        <label>Stock:</label><br>
+        <input id="stock" type="number"><br>
+
+        <label>Expected shipping</label>
+        <input type="date" id="expected_shipped"><br>
+
+        <label>Image:</label><br>
+        <input id="img_file" type="file"><br><br>
+
+        <button type="button" id="saveBtn">Save product</button>
+        <button type="button" id="cancelEditBtn" style="display:none;">Cancel edit</button>
+    </form>
+
+    <p id="message"></p>
+
+    <script type="module" src="js/adminProducts.js"></script>
+</body>
+</html>

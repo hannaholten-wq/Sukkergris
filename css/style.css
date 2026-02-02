@@ -1,0 +1,285 @@
+/* ==================== GLOBALT ==================== */
+
+body {
+  background-color: #f6e6c8; /* oransje/gul bakgrunn */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: #9e1b1b; /* rød */
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #c62828; /* rød */
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ==================== FELLES BOKSER / KORT ==================== */
+
+section,
+.admin,
+form,
+#list div {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#list {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+/* ==================== ORDER INFO ==================== */
+
+.orderHeaderBox {
+  background: #fbe3b0; /* lys gul */
+  padding: 18px 20px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #9e1b1b; /* rød */
+  border: 2px solid #c62828;
+  box-shadow: 0px 3px 10px rgba(198, 40, 40, 0.25);
+}
+
+.orderHeaderBox span {
+  font-size: 1.6rem;
+  margin-right: 6px;
+}
+
+/* ==================== ORDER-CONTAINER ==================== */
+
+#container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+#container p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+#container h3 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #9e1b1b; /* rød */
+}
+
+/* ==================== LISTE ==================== */
+
+#container ul {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style: none;
+}
+
+#container li {
+  background: #fff2d6; /* varm gul */
+  border: 1px solid #c62828;
+  border-radius: 12px;
+  padding: 18px 20px 18px 45px;
+  margin-bottom: 18px;
+  line-height: 1.6;
+  position: relative;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+#container li::before {
+  content: "🍬";
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+}
+
+#container li:last-child {
+  margin-bottom: 0;
+}
+
+/* ==================== NO WRAP FIX ==================== */
+
+.noWrap {
+  white-space: nowrap;
+}
+
+/* ==================== SKJEMA / INPUT ==================== */
+
+label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  color: #9e1b1b; /* rød */
+  margin-top: 15px;
+}
+
+input,
+textarea,
+select {
+  width: 95%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #9e1b1b;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ==================== KNAPPER ==================== */
+
+button {
+  background-color: #2f5d8a; /* blå */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #24496d; /* mørkere blå */
+  transform: scale(1.05);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.logout {
+  background-color: #1f3f5f; /* mørk blå */
+}
+
+.logout:hover {
+  background-color: #162d44;
+}
+
+.checkoutButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ==================== KOMMENTARER / RATING ==================== */
+
+#commentsSection {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#commentsContainer > div {
+  background-color: #fff2d6;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#userRatingsContainer {
+  max-width: 380px;
+  margin: 0 auto 40px;
+  padding: 15px 20px;
+  background-color: #fff8eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#userRatingsContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#userRatingsContainer li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  text-align: left;
+}
+
+#userRatingsContainer li:last-child {
+  border-bottom: none;
+}
+
+#userRatingsContainer li::first-line {
+  font-weight: 600;
+}
+
+/* ==================== BILDER ==================== */
+
+#imageContainer img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+#container img {
+  display: block;
+  margin: 0 auto;
+}
+
+.profilePic,
+#smallPic {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+profilePic {
+  width: 50px;
+  height: 50px;
+}
+
+#smallPic {
+  width: 40px;
+  height: 40px;
+}
+
+/* ==================== PRIS ==================== */
+
+#totalPrice {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #9e1b1b; /* rød */
+}
+
+/* ==================== ADMIN LOGIN ==================== */
+
+#loginContainer,
+#adminMenu {
+  display: none;
+}

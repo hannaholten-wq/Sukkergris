@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sukkergris - Product details</title>
+  </head>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <body>
+    <h1>Product details</h1>
+    <img id="smallPic" class="profilePic" hidden />
+    
+    <section>
+      <p id="message"></p>
+      <button id="putInShoppingCartBtn">Add to shopping cart</button>
+      <button id="goToShoppingCartBtn">Go to shopping cart</button>
+      <button id="homeBtn">Home</button>
+      <hr />
+      <h2 id="productName"></h2>
+      <div id="imageContainer"></div>
+      <h2 id="productCategoryName"></h2>
+      <h2 id="productDescription"></h2>
+      <h2 id="productPrice"></h2>
+      <h2 id="productDiscount"></h2>
+      <h2 id="productsInStock"></h2>
+      <h2 id="productExpectedShipped"></h2>
+      <h2 id="productRating"></h2>
+
+      <hr />
+      <h2>Rate this product:</h2>
+      <textarea
+        id="textInputFeltComment"
+        placeholder="Write your comment here"
+      ></textarea
+      ><br />
+
+      <label for="rateThisProduct">Rating (1-5⭐):</label>
+      <select id="rateThisProduct">
+        <option value="1">⭐</option>
+        <option value="2">⭐⭐</option>
+        <option value="3">⭐⭐⭐</option>
+        <option value="4">⭐⭐⭐⭐</option>
+        <option value="5" selected>⭐⭐⭐⭐⭐</option>
+      </select>
+
+      <button id="addCommentBtn">Add comment and rating</button>
+      <p id="messageAfterYouComment"></p>
+      <!-- til suksess/feil-meldinger -->
+
+      <button id="viewCommentsAndRatingsBtn">View comments and rating</button>
+      <div id="commentsSection" style="display: none">
+        <h3>Comments and rating</h3>
+        <div id="commentsContainer"></div>
+      </div>
+    </section>
+
+    <script type="module" src="js/productDetails.js"></script>
+  </body>
+</html>
